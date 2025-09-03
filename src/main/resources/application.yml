@@ -1,1 +1,31 @@
-spring.application.name=UberSocketService
+#spring.application.name=UberSocketService
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: UberSocketService
+
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/Uber_Review
+#    username: root
+#    password: sat@0752
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: validate
+
+server:
+  port: 8080
+
+
